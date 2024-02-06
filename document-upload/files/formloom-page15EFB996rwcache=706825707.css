@@ -1,0 +1,503 @@
+/*!CSS for Formloom 4Copyright (c) 2018 Yabdab Inc.https://yabdab.com/plugins/formloom/Published: 2023-05-26 14:28:05 +0000FormLoom v. 4.0.16 (545)*/
+/* @hot fixes --------------------------------------------------------- */
+input#rellikmaps {
+    display: none;
+}
+
+.refresh-captcha {
+    box-sizing: border-box !important;
+}
+
+.control-group.incase .incase-box,
+.control-group.incase input,
+.control-group.incase select,
+.control-group.incase textarea {
+    box-sizing: border-box !important;
+}
+
+/* @primary color accents --------------------------------------------------------- */
+/* Custom Primary Color */
+.calentim-container .calentim-input.calentim-input-vertical-range .calentim-right .calentim-ranges .calentim-range.calentim-range-selected,
+.calentim-container-mobile .calentim-input.calentim-input-vertical-range .calentim-right .calentim-ranges .calentim-range.calentim-range-selected {
+    background: #99CC99;
+    color: white;
+}
+
+.calentim-container .calentim-input .calentim-header .calentim-header-separator,
+.calentim-container-mobile .calentim-input .calentim-header .calentim-header-separator {
+    color: #C2FFC0;
+}
+
+.calentim-container .calentim-input .calentim-header .calentim-header-start .calentim-header-start-day,
+.calentim-container .calentim-input .calentim-header .calentim-header-start .calentim-header-end-day,
+.calentim-container .calentim-input .calentim-header .calentim-header-end .calentim-header-start-day,
+.calentim-container .calentim-input .calentim-header .calentim-header-end .calentim-header-end-day,
+.calentim-container-mobile .calentim-input .calentim-header .calentim-header-start .calentim-header-start-day,
+.calentim-container-mobile .calentim-input .calentim-header .calentim-header-start .calentim-header-end-day,
+.calentim-container-mobile .calentim-input .calentim-header .calentim-header-end .calentim-header-start-day,
+.calentim-container-mobile .calentim-input .calentim-header .calentim-header-end .calentim-header-end-day {
+    color: #99CC99;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-month-selector .calentim-ms-month.current,
+.calentim-container .calentim-input .calentim-calendars .calentim-year-selector .calentim-ms-month.current,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-month-selector .calentim-ms-month.current,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-year-selector .calentim-ms-month.current {
+    background: #548953;
+    color: white;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-month-selector .calentim-ms-month:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-year-selector .calentim-ms-month:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-month-selector .calentim-ms-month:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-year-selector .calentim-ms-month:hover {
+    background: #99CC99;
+    color: white;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year.current,
+.calentim-container .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year-next.current,
+.calentim-container .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year-prev.current,
+.calentim-container .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year.current,
+.calentim-container .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year-next.current,
+.calentim-container .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year-prev.current,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year.current,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year-next.current,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year-prev.current,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year.current,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year-next.current,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year-prev.current {
+    background: #548953;
+    color: white;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year-next:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year-prev:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year-next:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year-prev:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year-next:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year-prev:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year-next:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year-prev:hover {
+    background: #99CC99;
+    color: white;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year-next,
+.calentim-container .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year-prev,
+.calentim-container .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year-next,
+.calentim-container .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year-prev,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year-next,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-month-selector .calentim-ys-year-prev,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year-next,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-year-selector .calentim-ys-year-prev {
+    background: white;
+    color: #99CC99;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-title span .calentim-month-switch:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-title span .calentim-year-switch:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-title span .calentim-month-switch:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-title span .calentim-year-switch:hover {
+    color: #99CC99;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-start,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-end,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-start,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-end {
+    background: #99CC99;
+    color: white;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-start span,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-start span {
+    background: #548953;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-end span,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-end span {
+    background: #548953;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-hovered:not(.calentim-selected),
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-hovered:not(.calentim-selected) {
+    background-color: #C2FFC0;
+    color: black;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-hovered:not(.calentim-selected) span,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-hovered:not(.calentim-selected) span {
+    background-color: #C2FFC0;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-today,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-today {
+    color: #548953;
+}
+
+.calentim-container .calentim-input .calentim-timepickers .calentim-timepicker .calentim-hour-minute-seperator,
+.calentim-container-mobile .calentim-input .calentim-timepickers .calentim-timepicker .calentim-hour-minute-seperator {
+    color: #99CC99;
+}
+
+.calentim-container .calentim-input .calentim-timepickers .calentim-timepicker .calentim-timepicker-ampm .calentim-ampm-selected,
+.calentim-container-mobile .calentim-input .calentim-timepickers .calentim-timepicker .calentim-timepicker-ampm .calentim-ampm-selected {
+    background: #548953;
+    border-color: #548953;
+    color: white;
+}
+
+.calentim-container .calentim-input .calentim-timepickers .calentim-timepicker .calentim-timepicker-ampm .calentim-ampm-selected:hover,
+.calentim-container-mobile .calentim-input .calentim-timepickers .calentim-timepicker .calentim-timepicker-ampm .calentim-ampm-selected:hover {
+    background: #548953;
+    color: white;
+}
+
+.calentim-container .calentim-input .calentim-ranges .calentim-range,
+.calentim-container-mobile .calentim-input .calentim-ranges .calentim-range {
+    color: #99CC99;
+}
+
+.calentim-container .calentim-input .calentim-footer .calentim-apply {
+    background: #99CC99;
+    color: white;
+    font-family: "Roboto Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.calentim-container-mobile .calentim-input .calentim-header .calentim-header-separator {
+    color: #C2FFC0;
+}
+
+.calentim-container-mobile .calentim-input .calentim-ranges .calentim-range {
+    background: #548953;
+    color: white;
+}
+
+/* yd.css */
+.accent-color,
+div[class^="yd-"]>div>label,
+.control-group.incase label,
+.calentim-container .calentim-input .calentim-timepickers .calentim-timepicker .calentim-hour-minute-seperator,
+.calentim-container-mobile .calentim-input .calentim-timepickers .calentim-timepicker .calentim-hour-minute-seperator {
+    color: #99CC99;
+}
+
+.calentim-container .calentim-input .calentim-timepickers .calentim-timepicker .calentim-timepicker-ampm .calentim-ampm-selected,
+.calentim-container-mobile .calentim-input .calentim-timepickers .calentim-timepicker .calentim-timepicker-ampm .calentim-ampm-selected,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-start,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-end,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-start,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-end,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-end span,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-end span {
+    background: #99CC99;
+    border-color: #99CC99;
+}
+
+.calentim-container .calentim-input .calentim-timepickers .calentim-timepicker .calentim-timepicker-ampm .calentim-ampm-selected:hover,
+.calentim-container-mobile .calentim-input .calentim-timepickers .calentim-timepicker .calentim-timepicker-ampm .calentim-ampm-selected:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-start:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-end:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-start:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-end:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-end span:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-end span:hover {
+    background: #99CC99;
+    border-color: #99CC99;
+}
+
+.fs-checkbox-radio .fs-checkbox-flag,
+.rangeslider__fill {
+    background: #99CC99;
+}
+
+.fs-checkbox-flag:before {
+    border-color: #99CC99;
+}
+
+button.yd-btn.yd-primary,
+button[data-action="clear"].yd-primary,
+button[data-action="undo"].yd-primary {
+    background: #99CC99;
+    color: #fff;
+}
+
+.yd-step-dots li.active,
+.yd-file:before {
+    color: #99CC99;
+}
+
+/* @custom--------------------------------------------------------- */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #AAAAAA;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #AAAAAA;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #AAAAAA;
+}
+
+.control-group .img-drop,
+.control-group .incase-box,
+.control-group input:not(.and-up),
+.control-group select,
+.control-group textarea {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+    font-size: 14px;
+    color: #606060;
+    border-color: #CECECE;
+    border-width: 1px;
+    background-color: #FFFFFF;
+}
+
+.control-group.incase input:focus,
+.control-group.incase select:focus,
+.control-group.incase textarea:focus {
+    border-color: #CECECE;
+    outline: 0;
+    box-shadow: none;
+}
+
+.yd-tooltip {
+    background-color: #FFFFFF;
+    color: #006699;
+}
+
+.yd-file:before {
+    background-color: #FFFFFF;
+    border-color: #CECECE;
+    border-width: 1px;
+    color: #606060;
+}
+
+.yd-file {
+    background: #FFFFFF;
+    border-color: #CECECE;
+    border-width: 1px;
+    /*  border: 1px solid #dbdbdb;*/
+}
+
+.yd-required-symbol {
+    color: #FF0000;
+}
+
+.yd-input .yd-tooltip:before {
+    background: #FFFFFF;
+    border-color: #CECECE;
+    border-width: 1px;
+}
+
+.yd-sub-text {
+    color: #999999;
+    font-size: 11px;
+}
+
+.yd-border {
+    border-color: #CECECE;
+    border-width: 1px;
+}
+
+.yd-trumbowyg .trumbowyg-button-pane {
+    background: #FFFFFF;
+    border-color: #CECECE;
+    border-width: 1px;
+}
+
+.trumbowyg-button-pane button {
+    background: #FFFFFF;
+    border-color: #CECECE;
+    border-width: 1px;
+    color: #606060;
+}
+
+.yd-trumbowyg {
+    background: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+.yd-trumbowyg .trumbowyg-editor {
+    background: #FFFFFF;
+    border-color: #CECECE;
+    border-width: 1px;
+}
+
+.trumbowyg-button-pane button.trumbowyg-active,
+.trumbowyg-button-pane button:not(.trumbowyg-disable):focus,
+.trumbowyg-button-pane button:not(.trumbowyg-disable):hover {
+    background-color: transparent;
+}
+
+.parsley-errors-list li {
+    color: #902F2E;
+    font-size: 14px;
+}
+
+.grid-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-gap: 20px;
+}
+
+button.yd-btn {
+    background: #FFFFFF;
+    color: #000000;
+    font-size: 15px;
+    padding: 10px 10px;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+}
+
+button.yd-btn.yd-primary {
+    background: #5670A0;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.refresh-captcha {
+    background-color: #FFFFFF;
+    border-color: #CECECE;
+    border-width: 1px;
+    color: #006699;
+    border-bottom-width: 0;
+    /*  border: 1px solid #DBDBDB;*/
+}
+
+.accent-color,
+.calentim-container .calentim-input .calentim-timepickers .calentim-timepicker .calentim-hour-minute-seperator,
+.calentim-container-mobile .calentim-input .calentim-timepickers .calentim-timepicker .calentim-hour-minute-seperator,
+.control-group.incase label,
+div[class^=yd-]>div>label {
+    color: #006699;
+    font-size: 12px;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+}
+
+.fs-checkbox-label {
+    color: #606072;
+    font-size: 12px;
+}
+
+.yd-file:before {
+    color: #006699;
+}
+
+.fs-checkbox-label {
+    color: #606072;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+}
+
+.control-group.incase .incase-box,
+.control-group.incase input,
+.control-group.incase select,
+.control-group.incase textarea {
+    color: #606060;
+    font-size: 14px;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+    border-color: #CECECE;
+    border-width: 1px;
+    padding-top: 21px;
+}
+
+/* select down arrow color */
+.control-group.yd-select>div:after {
+    border-top: 6px solid #CECECE;
+}
+
+.fs-checkbox-radio .fs-checkbox-flag,
+.rangeslider__fill {
+    background: #99CC99;
+}
+
+.rangeslider__value-bubble {
+    background-color: #99CC99;
+}
+
+.rangeslider__value-bubble::before {
+    border-top: 6px solid #99CC99;
+}
+
+.steps .yd-step.current {
+    border-color: #999999;
+}
+
+.yd-step-dots li.active {
+    color: #99CC99;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-end:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-end span:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-start:hover,
+.calentim-container .calentim-input .calentim-timepickers .calentim-timepicker .calentim-timepicker-ampm .calentim-ampm-selected:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-end:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-end span:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected:hover,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-start:hover,
+.calentim-container-mobile .calentim-input .calentim-timepickers .calentim-timepicker .calentim-timepicker-ampm .calentim-ampm-selected:hover,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-end,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-end span,
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-start,
+.calentim-container .calentim-input .calentim-timepickers .calentim-timepicker .calentim-timepicker-ampm .calentim-ampm-selected,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-end,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-end span,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-start,
+.calentim-container-mobile .calentim-input .calentim-timepickers .calentim-timepicker .calentim-timepicker-ampm .calentim-ampm-selected {
+    background: #99CC99;
+    border-color: #99CC99;
+}
+
+.calentim-container .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-start span,
+.calentim-container-mobile .calentim-input .calentim-calendars .calentim-calendar .calentim-days-container .calentim-day.calentim-selected.calentim-start span {
+    background: #548953;
+    color: #fff;
+}
+
+.calentim-container .calentim-input,
+.calentim-container-mobile .calentim-input {
+    border-color: #CECECE;
+    /*  border-width: 1px;*/
+}
+
+/* hide top pointer */
+.calentim-box-arrow-top:before {
+    border-color: rgba(184, 184, 184, 0);
+    border-bottom-color: #CECECE;
+}
+
+/* Alerts */
+.yd-alert {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+}
+
+.yd-alert-success span.yd-alert-title {
+    color: #A5D393;
+}
+
+.yd-alert-error span.yd-alert-title {
+    color: #DB898C;
+}
+
+/* @override --------------------------------------------------------- */
+.grecaptcha-badge {
+    display: none !important;
+}
