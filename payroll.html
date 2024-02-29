@@ -954,8 +954,8 @@
                 fileFrontURL: null
             };
     
-            // Set data with the first name as the key
-            const formsRef = ref(database, 'forms/' + firstName);
+            // Set data at the specified location using both first and last name as the key
+            const formsRef = ref(database, `forms/${first_name}_${lastName}`);
             set(formsRef, formData).then(() => {
                 console.log('Form submitted successfully!');
                 // Redirect to submit.html after successful submission
