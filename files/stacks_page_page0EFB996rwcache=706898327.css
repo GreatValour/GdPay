@@ -9686,7 +9686,7 @@ body {
 
 	#stacks_in_1050 .site-logo {
 		
-		height: 25px;
+		height: 35px;
 		
 	}
 	
@@ -9769,7 +9769,7 @@ body {
 
 	#stacks_in_1050 .site-logo {
 		
-		height: 25px;
+		height: 35px;
 		
 	}
 
@@ -11674,7 +11674,9 @@ body {
 /*  */
 
 /*  */
-/*  */#stacks_in_180 .flat_button_2_alignment {
+
+/*  */
+#stacks_in_180 .flat_button_2_alignment {
   font-size: 18px;
   
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -11947,7 +11949,9 @@ body {
 /*  */
 
 /*  */
-/*  */#stacks_in_1219 .flat_button_2_alignment {
+
+/*  */
+#stacks_in_1219 .flat_button_2_alignment {
   font-size: 18px;
   
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -12220,7 +12224,9 @@ body {
 /*  */
 
 /*  */
-/*  */#stacks_in_1218 .flat_button_2_alignment {
+
+/*  */
+#stacks_in_1218 .flat_button_2_alignment {
   font-size: 18px;
   
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -12604,7 +12610,9 @@ body {
 /*  */
 
 /*  */
-/*  */#stacks_in_1202 .flat_button_2_alignment {
+
+/*  */
+#stacks_in_1202 .flat_button_2_alignment {
   font-size: 18px;
   
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -12877,7 +12885,9 @@ body {
 /*  */
 
 /*  */
-/*  */#stacks_in_263 .flat_button_2_alignment {
+
+/*  */
+#stacks_in_263 .flat_button_2_alignment {
   font-size: 18px;
   
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -13150,7 +13160,9 @@ body {
 /*  */
 
 /*  */
-/*  */#stacks_in_1332 .flat_button_2_alignment {
+
+/*  */
+#stacks_in_1332 .flat_button_2_alignment {
   font-size: 18px;
   
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -14211,7 +14223,8 @@ body {
 /*  */
 
 /*  */
-/*  */
+
+/*  */
 #stacks_out_789 {
 	width: 90%;
 }
